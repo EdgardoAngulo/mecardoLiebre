@@ -1,0 +1,396 @@
+/* Estilos 
+
+Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+
+Selector universal */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* centra el buscar con respecto al logo */
+    padding: 10px;
+}
+
+.logo{
+    width: 50%;
+}
+
+.barraBuscar{
+    width: 50%;
+}
+
+.colocarDentroBuscar{
+    position: relative;
+    top: -17px;
+    left: 155px;
+}
+
+.formatoButton2{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#EAC926;
+    color:black;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;     /* 1rem; 1.5em; */
+    width: 100%;
+    justify-content: center;
+}
+
+.formatoMenu{
+    list-style: none;           /* quitamos el punto a la lista */
+    display: none;
+    font-size: 1 rem;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* Para hacer saltos dentro de la misma pagina */
+#c1 {
+    direction: none; /* solo para que no muestre error */
+}
+
+.burger-Menu{
+    background-color: blue;
+    color:white;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+.imagenBanner {
+    width: 100%;
+}
+
+main {
+    align-content: center;
+    width:100vw;
+    margin-bottom: 10px;
+    border-top: 1px solid #ebebeb;
+    background-color: #FFF;
+    padding: 15px;
+}
+
+.contenedor-article img {
+    width: 90%;
+}
+
+/* Eliminado generaba un espacio adicional a la cafetera
+.contenedor-article {
+    align-items: center;
+    margin: 1px;
+    border: 1px solid #ebebeb;
+    padding: 15px;
+}  
+*/
+
+
+.box-2{
+    align-items: center;
+    margin: 1px;
+    border: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+div.abajo{
+    position: relative;
+    padding-top: 15px;
+    border-top: 1px solid #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formatoButton4{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: #39b54a;
+}
+
+.cuerposDeTexto { font-size: 12px }
+
+.titulares { font-size: 24px }
+
+.box-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: 1px solid #ebebeb;
+    align-content: center;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.precios{ 
+    font-size: 18px;
+    width: 50%;
+}
+
+.descuentos{ 
+    font-size: 16px;
+    color:#39b54a;
+    width:50%;
+    text-align:left;
+}
+
+.descripciones{ 
+  font-size: 16px;
+  visibility: hidden;
+  opacity: 0;
+  flex-grow: 1;
+}
+
+/* T1 tratando de que aparezca con el cursor */
+.box-2:hover .descripciones{ 
+    /* display:block; */
+    visibility: visible;
+    opacity: 1;
+    transition: 2s;
+}
+
+.box-2:hover{
+    box-shadow: 0px 0px 10px rgb( 100 , 100 , 100 );
+    transition: 1s;
+
+}
+
+.box-2:hover i{
+    transform: rotate(-90deg);
+    transition: 3s;
+}
+
+.footer-icono{
+    color: #1259c3;
+    font-size: 25px;   
+    text-align: center;
+    size: 5mm;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 10px; /* tal vez no se requiere */
+    margin-bottom: 10px;
+}
+
+.footer-icono:hover{
+    color: #EAC926;
+    transition: 1s;
+}
+
+footer section{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+@media (min-width: 361px){
+    /* Tablet */
+
+    .logo{
+        width: 25%;
+    }
+    
+    .barraBuscar{
+        width: 25%;
+    }
+
+    .formatoButton2{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 14px;
+        justify-content: center;
+        width: 50%;
+    }
+    
+    /* Menu Genearal del Header */
+    .formatoMenu{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    /* Menu 1 del Header */
+    .menu1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 45%;
+    }
+
+    /* Menu Espacio del Header */
+    .menuEspacio{
+        display: flex;
+        flex-wrap: wrap;
+        width: 5%;
+    }
+
+
+    /* Menu 2 del Header */
+    .menu2{
+        display: flex;
+        flex-wrap: wrap;    
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    .burger-Menu{
+        display: none;
+    }
+
+    .box-2{
+        width: 45%;
+        margin-top: 15px;
+    }
+
+    .precios { 
+        /* width: 50%; */
+        align-self: center;
+        text-align: left;
+        flex-grow: 1;
+    }
+    
+    .descuentos { 
+        /* width: 50%; */
+        align-self: center;
+        text-align: left;
+        flex-grow: 1;
+    }
+
+    .footer-aviso{
+        width: 33.3%;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 769px){
+    /* Destop */
+
+    .contenedor-article img {
+        width: 90%;
+        /* box-shadow: 10px 10px 8px 10px #888888; */
+        box-shadow: 0px 0px 10px rgb ( 100 , 100 , 100 ); 
+    }
+
+    .box-2{
+        width: 20%;
+        margin-top: 15px;
+    }
+
+    .precios { 
+        width: 50%;
+        align-self: center;
+        text-align: left;
+    }
+    
+    .descuentos {
+        width: 50%;
+        align-self: center;
+        text-align: right;
+    }
+
+    /* Menu Genearal del Header */
+    .formatoMenu{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;  
+    }
+
+    /* Menu 1 del Header */
+    .menu1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 40%;
+    }
+
+    /* Menu Espacio del Header */
+    .menuEspacio{
+        display: flex;
+        flex-wrap: wrap;
+        width: 10%;
+    }
+
+
+    /* Menu 2 del Header */
+    .menu2{
+        display: flex;
+        flex-wrap: wrap;    
+        justify-content: space-between;
+        width: 50%;
+    }
+
+
+}
+
+@media (min-width: 1280px){
+    /* Destop */
+
+    /* Menu Genearal del Header */
+    .formatoMenu{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;  
+    }
+
+    /* Menu 1 del Header */
+    .menu1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 30%;
+    }
+
+    /* Menu Espacio del Header */
+    .menuEspacio{
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+    }
+
+
+    /* Menu 2 del Header */
+    .menu2{
+        display: flex;
+        flex-wrap: wrap;    
+        justify-content: space-between;
+        width: 30%;
+    }
+
+
+}

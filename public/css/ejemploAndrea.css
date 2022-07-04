@@ -1,0 +1,26 @@
+/* codigo Andrea */
+
+@media screen and (min-width: 769px){
+
+.product{
+    box-shadow: none;
+    transition: 1000ms;
+}
+
+.product i{
+    transition: 1000ms;
+}
+
+    .product:hover i{
+        transform: rotate(-90deg);
+    }
+
+    .product:hover {
+       box-shadow: 0px 0px 10px rgb( 100 , 100 , 100 );
+    }
+
+    .product{
+        width: 17%
+        }
+
+}  

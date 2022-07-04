@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <title>MERCADO LIEBRE</title>
+    
+        <!-- En el momento el    content="width=devide-width    tiene un warning  -->
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    
+        <!-- Carnagndo Archivo propio de estilos -->        
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/stylesf.css">
+    
+        <!-- Cargando google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+        <!-- Cargando iconos-->
+        <script src="https://kit.fontawesome.com/af3bfc9f43.js" crossorigin="anonymous"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    
+    </head>  
+
+<body>
+
+    <header>
+        <console class="log">Pendiente copiar HEADER definitivo</console>
+    </header>
+
+    <!-- Formulario - Register -->
+    <div class="form-formulario1">
+        <form action="register.html" method="post">
+            <p class="form-linea1">
+                <input type="text" placeholder="Nombre y apellido" name="nombreApellido" required>
+            </p>
+
+            <p class="form-linea1">
+                <input 
+                    type="text" 
+                    placeholder="Nombre de usuari@" 
+                    name="nombreUsuario"
+                    pattern="[a-z\d\.]{6,15}"
+                    title="El Nombre de usuario no puede contener mayusculas ni caracteres especiales
+                            / El Nombre de usuario recibe minio 6 hasta 15 caracteres"
+                    id="nombreUsuario"
+                    required
+                    >
+            </p>
+
+            <!-- Quitamos la etiqueta label y utilizamos solamente la etiqueta p -->
+            <!-- Si hay que colocarla iria antes del input y después de su cierre -->
+            <p class="form-linea1"> 
+                <input type="date"  placeholder="Fecha de nacimiento" name="fechaNacimiento" required>
+            </p>
+            
+            <p class="form-linea1"> <input type="text" placeholder="Domicilio" name="domicilio" required></p>
+            
+            <p class="form-linea1">Perfil del usuario</p>
+            <p class="form-linea2">
+                <input type="radio" name="Comprador" value="Comprador"> Comprador
+                <input type="radio" name="Vendedor" value="Vendedor"> Vendedor
+            </p>
+            
+            <!-- Categorías de interés (puede elegir más de una) -->  
+            
+            <p class="form-linea1">Intereses</p>
+            <p class="form-linea2"> <input type="checkbox" name="interes1" value="Electro"> Electro</p>
+            <p class="form-linea2"> <input type="checkbox" name="interes2" value="Moda"> Moda</p>
+            <p class="form-linea2"> <input type="checkbox" name="interes3" value="Hogar"> Hogar</p>
+            <p class="form-linea2"> <input type="checkbox" name="interes4" value="Juguetería"> Juguetería </p>
+            <p class="form-linea2"> <input type="checkbox" name="interes5" value="Vida sana"> Vida sana</p>
+            
+              
+            <p class="form-linea1"> Foto de usuario
+                <input type="file" name="foto" accept=".jpg">
+            </p>
+
+            <p class="form-linea1">
+                <label>Arma tú contraseña:</label>
+                <input 
+                    type="password"
+                    placeholder="Contraseña" 
+                    name="password1"
+                    pattern="[a-z\d\.]{8,10}"
+                    title="El Nombre de usuario no puede contener mayusculas 
+                            ni caracteres especiales / El Nombre de usuario 
+                            recibe minimo 8 hasta 10 caracteres"
+                    id="password1"
+                    required>
+            </p>
+
+            <p class="form-linea1">
+                <label>Confirmar Contraseña:</label>
+                <input type="password" name="password2" required>
+            </p>
+
+            <p class="form-linea1">
+                <button type="reset">Borrar</button>
+                <button type="submit">Enviar</button>
+                <button> <a href="/home">Regresar al home</a> </button>
+            </p>
+        </form>
+    </div>
+
+    <footer>
+        <console class="log">Pendiente copiar FOOTER definitivo</console>
+    </footer>
+
+
+</body>
+
+</html>

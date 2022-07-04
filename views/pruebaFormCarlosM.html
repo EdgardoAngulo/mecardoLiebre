@@ -1,0 +1,27 @@
+
+
+<form action="/views/home.html" method="post">
+
+            <div>
+                <label>Nombre de usuari@: </label>
+                <input
+                type="text"
+                name="username"
+                placeholder="Nombre de usuari@"
+                pattern="[a-z\d\.]{2,15}"
+                title="El Nombre de usuario no puede contener mayusculas ni caracteres especiales
+                / El Nombre de usuario recibe minio 6 hasta 15 caracteres"
+                id="username"
+                >
+            </div>
+
+            <div>
+                <label>Contraseña: </label>
+                <input type="password" name="" id="password" placeholder="Contraseña">
+                <span class="feedback"></span>
+            </div>
+
+            <div>
+                <button type="submit" onclick="alert('Se envio el formulario')" >Inicar</button>
+            </div>     
+        </form>

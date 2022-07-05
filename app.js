@@ -12,7 +12,9 @@ app.use( express.static(publicPath));
 console.log(publicPath)
 
 // Activamos el servidor en (escuchar)
-app.listen(3090, () => console.log("El servidor 3090 está activo"));
+// app.listen(3090, () => console.log("El servidor 3090 está activo")); 
+app.listen(process.env.PORT || 3000, () => console.log("Server running in port 3000"))
+
 
 
 // El indice - Menu
